@@ -47,7 +47,7 @@ It's in the `src` folder.
 
 To make it possible to reproduce some of the figures in the paper, we have included data that went into these figures. You will have to manually download it.
 
-[Download data here]()
+[Download data here](https://github.com/emonetlab/controlling-dynamic-stimuli/releases/download/v19.11.16/data.zip)
 
 # Installation 
 
