@@ -1,0 +1,7 @@
+data/
+*.mat
+*.cache
+*.fitparams
+*.pdf
+*.DS_Store
+unused/
