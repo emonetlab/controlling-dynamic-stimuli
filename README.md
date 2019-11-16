@@ -1,4 +1,4 @@
-# README
+# Controlling and measuring dynamic odorant stimuli
 
 This repository contains code to go along with the paper
 
@@ -29,6 +29,13 @@ A toolbox to talk to your Alicat MFC and automatically tune PID values is includ
 
 ## A simple model of odorant puffs, with sliders to manipulate parameters 
 
+In our paper, we described a simple model that can reproduce the rich kinetics observed in identically delivered odorant stimuli. To get a feel for the model, you can interact with the model and manipulate sliders that are linked to every parameter in the model. The interactive demo looks something like this:
+
+![](https://user-images.githubusercontent.com/6005346/68999059-e643d100-0888-11ea-8e06-f6d97d9cca34.png)
+
+To start this, run the `puff_explorer.m` script in the `puff-model` folder. 
+
+
 ## Data
 
 To make it possible to reproduce some of the figures in the paper, we have included data that went into these figures. You will have to manually download it.
@@ -43,6 +50,7 @@ To make it possible to reproduce some of the figures in the paper, we have inclu
 0. MATLAB 
 1. [mtools](https://github.com/sg-s/srinivas.gs_mtools/)
 2. [data-manager](https://github.com/sg-s/data-manager/)
+3. [data-manager](https://github.com/sg-s/puppeteer/)
 
 ## Get the code 
 
@@ -51,6 +59,7 @@ If you're using git, you can
 ```bash
 git clone https://github.com/sg-s/srinivas.gs_mtools/
 git clone https://github.com/sg-s/data-manager
+git clone https://github.com/sg-s/puppeteer
 git clone https://github.com/emonetlab/controlling-dynamic-stimuli
 ```
 
@@ -71,7 +80,9 @@ setpref('controlling_odor','data_loc','/path/to/data/')
 ## Reproduce figures from the paper
 
 
+# Bugs? Issues?
 
+Open an issue [here](https://github.com/emonetlab/controlling-dynamic-stimuli/issues)
 
 # License 
 
