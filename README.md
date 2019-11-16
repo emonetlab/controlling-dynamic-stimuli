@@ -36,6 +36,13 @@ In our paper, we described a simple model that can reproduce the rich kinetics o
 To start this, run the `puff_explorer.m` script in the `puff-model` folder. 
 
 
+## natStimBuilder
+
+natStimBuilder is a class that will help you iteratively tune control signals to match some desired stimulus statistics, as in Figure 3. 
+
+It's in the `src` folder. 
+
+
 ## Data
 
 To make it possible to reproduce some of the figures in the paper, we have included data that went into these figures. You will have to manually download it.
