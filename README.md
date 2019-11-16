@@ -14,12 +14,26 @@ by Srinivas Gorur-Shandilya, Carlotta Martelli, Mahmut Demir and Thierry Emonet.
 
 Code to reproduce the primary figures in the paper is contained in the `paper-figures/` folder. Once you have downloaded all the code and data (see below), you can run each script to make the figure as it appears in the paper. 
 
+For example,
+
+```
+fig_calibration
+```
+
+will generate Figure 3 in the paper. 
+
 
 ## Code to tune PID parameters of your Alicat MFC
+
+A toolbox to talk to your Alicat MFC and automatically tune PID values is included in this repository. Click [here](https://github.com/emonetlab/controlling-dynamic-stimuli/tree/master/alicat-mfc-tools) for a quick overview on this. 
 
 ## A simple model of odorant puffs, with sliders to manipulate parameters 
 
 ## Data
+
+To make it possible to reproduce some of the figures in the paper, we have included data that went into these figures. You will have to manually download it.
+
+[Download data here]()
 
 # Installation 
 
@@ -32,12 +46,21 @@ Code to reproduce the primary figures in the paper is contained in the `paper-fi
 
 ## Get the code 
 
+If you're using git, you can 
+
+```bash
+git clone https://github.com/sg-s/srinivas.gs_mtools/
+git clone https://github.com/sg-s/data-manager
+git clone https://github.com/emonetlab/controlling-dynamic-stimuli
+```
+
+to get all code and dependencies. 
+
+
+
 ## Tell MATLAB where the data is 
 
-1. Install [this toolbox]() and make sure it's on your path
-2. Download and install 
-2. Download necessary data from HERE and put it somewhere 
-3. Tell MATLAB where the data is:
+
 
 ```matlab
 setpref('controlling_odor','data_loc','/path/to/data/')
@@ -50,40 +73,6 @@ setpref('controlling_odor','data_loc','/path/to/data/')
 
 
 
-1. `/paper-figures/` code to generate figures for the methods paper on how to deliver dynamic odor stimuli. 
-2. `natStimBuilder` a class to construct Naturalistic stimuli using MFCs 
-3. 
+# License 
 
-You should be able to exactly reproduce every figure in the paper using this repository. Scripts in `paper-figures` should make figures for the paper exactly as you see them. 
-
-# Installation 
-
-The best way to install this repo is through my package manager: 
-
-```
-urlwrite('http://srinivas.gs/install.m','install.m'); 
-install sg-s/srinivas.gs_mtools
-install sg-s/data-manager   
-
-% this url will work after the paper is accepted. 
-% Before that, use git to clone this repo. 
-install sg-s/how-to-deliver-odor-stimuli        
-```
-
-# Get the data and link it
-
-Grab the data. Here is a link to download all the data you need: [INSERT LINK HERE]
-
-Then, link the data using `data-manager`
-
-```matlab
-rehash(dataManager,'path/to/where/you/copied/the/data')
-```
-
-# make PDFs of figures
-
-You can now navigate to `paper-figures/` and make PDFs of any figure using:
-
-```matlab
-makePDF('name-of-script')
-```
+GPL v3
