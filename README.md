@@ -12,6 +12,8 @@ by Srinivas Gorur-Shandilya, Carlotta Martelli, Mahmut Demir and Thierry Emonet.
 
 ## Code to reproduce papers in figure
 
+Code to reproduce the primary figures in the paper is contained in the `paper-figures/` folder. Once you have downloaded all the code and data (see below), you can run each script to make the figure as it appears in the paper. 
+
 
 ## Code to tune PID parameters of your Alicat MFC
 
