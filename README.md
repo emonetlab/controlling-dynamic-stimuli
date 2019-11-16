@@ -77,9 +77,12 @@ to get all code and dependencies.
 ## Tell MATLAB where the data is 
 
 
+Navigate to the folder where you data is, and use `dataManager` to link the data. What `dataManager` does is search these files, hashes them, and builds a hash table that maps hashes to paths. That way, the scripts you want to run can request a certain piece of data, and `dataManager` can serve that up, and the primary script doesn't have to know where the data is. 
 
-```matlab
-setpref('controlling_odor','data_loc','/path/to/data/')
+```
+cd /path/to/where/you/downloaded/data
+dm = dataManager;
+dm.rehash
 ```
 
 # Usage
