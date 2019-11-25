@@ -55,9 +55,9 @@ To make it possible to reproduce some of the figures in the paper, we have inclu
 ## Prequisities 
 
 0. MATLAB 
-1. [mtools](https://github.com/sg-s/srinivas.gs_mtools/)
-2. [data-manager](https://github.com/sg-s/data-manager/)
-3. [data-manager](https://github.com/sg-s/puppeteer/)
+1. [mtools](https://github.com/sg-s/srinivas.gs_mtools/) (Helper functions)
+2. [data-manager](https://github.com/sg-s/data-manager/) (To link data)
+3. [puppeteer](https://github.com/sg-s/puppeteer/) (For interactive manipulation of models)
 
 ## Get the code 
 
